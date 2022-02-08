@@ -19,7 +19,7 @@ from pydantic import BaseModel
 from itertools import chain
 
 
-data=pd.read_csv("D:\Term 8\Project 2\Data Set\PcsDataSet (1).csv", encoding = 'latin1',error_bad_lines=False)
+data=pd.read_csv("https://raw.githubusercontent.com/mohamedaminsharaf/api-1/main/PCsDataSet%20(1).csv", encoding = 'latin1',error_bad_lines=False)
 data.isna().sum()
 sn.countplot(data=data,x="PC_Type")
 data.drop("Name",inplace=True,axis=1)
